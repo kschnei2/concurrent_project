@@ -111,7 +111,7 @@ public class serialServer implements Runnable {//runnable and single thread adde
 		}
 
 		//check method: only support GET and HEAD now
-		System.out.println(reqArr[0]);
+		//System.out.println(reqArr[0]);
 		//if(reqArr[0] == "GET" || reqArr[0] == "GET "){
 		if(req.startsWith("GET")){
 			method = "GET";
@@ -242,7 +242,7 @@ public class serialServer implements Runnable {//runnable and single thread adde
 
 		//System.out.println(reply);
 		//if it's a GET, the file is output by requestHandler
-		System.out.println(reply);
+		//System.out.println(reply);
 		return reply;
 	
 	}

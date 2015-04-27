@@ -1,0 +1,23 @@
+httperf --client=0/1 --server=192.168.0.103 --port=9000 --uri=file1 --rate=100 --send-buffer=4096 --recv-buffer=16384 --method=GET --num-conns=1000 --num-calls=1
+Maximum connect burst length: 1
+
+Total: connections 1000 requests 1000 replies 1000 test-duration 10.349 s
+
+Connection rate: 96.6 conn/s (10.3 ms/conn, <=46 concurrent connections)
+Connection time [ms]: min 6.1 avg 24.8 max 1084.4 median 10.5 stddev 69.3
+Connection time [ms]: connect 17.1
+Connection length [replies/conn]: 1.000
+
+Request rate: 96.6 req/s (10.3 ms/req)
+Request size [B]: 70.0
+
+Reply rate [replies/s]: min 99.6 avg 99.7 max 99.8 stddev 0.1 (2 samples)
+Reply time [ms]: response 7.7 transfer 0.0
+Reply size [B]: header 112.0 content 33.0 footer 0.0 (total 145.0)
+Reply status: 1xx=0 2xx=1000 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 3.27 system 7.01 (user 31.6% system 67.7% total 99.3%)
+Net I/O: 20.3 KB/s (0.2*10^6 bps)
+
+Errors: total 0 client-timo 0 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
